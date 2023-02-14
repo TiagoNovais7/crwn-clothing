@@ -40,8 +40,9 @@ const SignUpForm = () => {
     } catch (error) {
       if (error.code === "auth/email-already-in-use") {
         alert("Cannot create user, email already in use");
+      } else {
+        console.log("user creation encounted an error", error);
       }
-      console.log("user creation encounted an error", error);
     }
   };
 
@@ -89,7 +90,7 @@ const SignUpForm = () => {
           name="confirmPassword"
           value={confirmPassword}
         />
-        <button  type="submit">Sign up</button>
+        <Button type="submit">Sign up</Button>
       </form>
     </div>
   );
