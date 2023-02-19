@@ -6,7 +6,7 @@ import {
   InvertedButton
 } from '../button/button.styles';
 
-export const CartDownContainer = styled.div`
+export const CartDropdownContainer = styled.div`
   position: absolute;
   width: 240px;
   height: 340px;
@@ -30,7 +30,7 @@ export const EmptyMessage = styled.span`
   margin: 50px auto;
 `;
 
-export const cartItems = styled.div`
+export const CartItems = styled.div`
   height: 240px;
   display: flex;
   flex-direction: column;
